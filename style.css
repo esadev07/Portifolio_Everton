@@ -1,0 +1,708 @@
+
+/* Estilo Geral MODELOS PADRAÃO*/
+*{
+    margin-left: 50%;
+    margin-right: 50%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.flex{
+    display: flex;
+}
+html{
+    scroll-behavior: smooth;
+    transition: .9s;
+}
+
+.topo1 {
+    position: fixed;
+    opacity: .9;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    
+}
+
+/*------------------------------IMAGEM DE FUNDO--------------------------*/
+
+body {
+    margin-left: 50%;
+    margin-right: 50%;
+    justify-content: center;    /* centraliza na horizontal */
+    align-items: center;        /* centraliza na vertical */
+    min-height: 100vh;          /* ocupa 100% da altura da tela */
+    margin: 0;                  /* tira margens padrão do navegador */
+    font-family: Arial, sans-serif; /* deixa a fonte mais bonita */
+}
+
+.topo1 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    
+    
+  
+}
+nav ul {
+    
+    list-style: none;
+    display: flex; 
+    margin: 0;
+    padding: 0;
+}
+nav ul li a { /*ESTILO DOS BOTÔES DE CIMA */
+    color: #ffffff5d;
+    text-decoration: none;
+    padding: 0 40px;
+    transition: all 0.5s ease;
+}
+.toposite ul  li :hover{
+    color: aliceblue;
+    font-size: 110%;
+    transition: all 0.5s ease;
+}
+
+.img {
+    margin-bottom: 200px;
+    background-image: url(images/fundo.png);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+ 
+}
+       
+.img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6); /* aqui você controla a opacidade */
+  z-index: 1;
+}
+
+.img h1 {
+  font-size: 5rem;
+  margin-bottom: -20px;
+}
+.img p {
+  font-size: 4rem;
+  margin-bottom: 80px;
+}
+.img  {
+  font-size: 2rem;
+}
+.img .content {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+/*----------------------------------dark-------------------------*/
+body {
+    background: #0000008c;
+    color: #ffffff;
+    transition: 0.3s; 
+     
+}
+.topo1 {
+    background: #0000008c;
+    color: #ffffff;
+    transition: 0.3s; 
+     
+}
+
+/* Tema Dark 
+body.dark, .topo1 {
+    background: #000000;
+    color: #ffffff;
+}
+body.dark, .topo1 {
+    background: #000000;
+    color: #ffffff;
+}*/
+
+
+
+
+
+/* Botão 
+#toggle-theme {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #000000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+body.dark #toggle-theme {
+    background: #000000;
+    color: #ffffff;
+}
+
+/*----------------------------------dark-------------------------*/
+
+
+body {
+    margin-left: 50%;
+    margin-right: 50%;
+    justify-content: center;    /* centraliza na horizontal */
+    align-items: center;        /* centraliza na vertical */
+    min-height: 100vh;          /* ocupa 100% da altura da tela */
+    margin: 0;                  /* tira margens padrão do navegador */
+    font-family: Arial, sans-serif; /* deixa a fonte mais bonita */
+}
+
+
+.interface{
+    max-width: 1280px;
+    margin: 10px 10%;
+}
+
+
+
+/*--------------------- Estilo cabeçalho primeira tela--------------------*/
+
+
+
+/*----------------------------------------------------------------*/
+
+
+#bnt-contato button {/*MODELO PADRÃO DOS BOTÔES DE CONTATO*/
+    padding: 10px 40px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color:#0000ff;
+    color: #fff;
+    border: 0;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+}    
+    #bnt-contato :hover{
+    box-shadow: 0px 0px 8px#0000ff;
+    transform: scale(1.15);
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+}
+    
+   
+h1.titulo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin: 0px 750px;
+    margin-left: auto;
+}
+h1.titulo span{
+    color: #0000ff;
+    font-size: 35px;
+}
+h2.titulo{
+    margin-left: 800PX;
+    margin-bottom: 5%;
+    color: #fff;
+    font-size: 32px;
+}
+h2.titulo span{
+    color: #0000ff;
+    font-size: 35px;
+}
+
+
+/*----------------------------------------------------------*/
+
+section.Topo-do-site{
+    padding: 40px 4%;
+
+}
+
+section.txt-topo-site.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 1800px;
+}
+
+.Topo-do-site p{
+    color: #fff;
+    margin: 20px 0px 50px;
+    margin-left: 0px;
+    white-space: pre-line;
+}
+.Topo-do-site .img-topo-site img{
+    margin-left: 8%;
+    height: 300px;
+    position: relative;
+    animation: flutuar 3s ease-in-out infinite alternate;
+    border-radius: 50%;
+}
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 50px;
+    }
+}
+
+/*----------------------------------------------------------
+/* Estilo dos Especialidades */
+
+
+section .Especialidades{
+    padding: 10px 40px 200px;
+}
+
+
+#img-redonda1{
+    margin-left: 200px;
+    height: 70px;
+    padding: 10px 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+#img-redonda1:hover{
+    transform: scale(1.2); 
+    border-radius: 45%;
+    filter:drop-shadow(5px -5px 5px #000080);
+    transition: all .5s ease;
+}
+#img-redonda{
+    height: 70px;
+    padding: 10px 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+#img-redonda:hover{
+    transform: scale(1.2); 
+    border-radius: 45%;
+    filter:drop-shadow(5px -5px 5px #000080);
+    transition: all .5s ease;
+}
+/*----------------------ESTILO SOBRE ----------------------------*/
+.sobre {
+    padding: 150px;
+    box-shadow: 0 0 40px 10px #fff;
+}
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+
+}
+.sobre .img-sobre{
+    padding: 1% 2%;
+    margin-right: 1%;
+    margin-left: 1%
+    
+}
+.sobre .txt-sobre {
+    color: #fff;
+}
+.sobre .txt-sobre h1{
+    color: #0000ff;
+    font-size: 25px;
+    margin-bottom: 0px
+}
+.sobre .txt-sobre h1 span{
+    color: #0000ff;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 30px;
+    margin-top: -10px;
+}
+.sobre .txt-sobre p{
+    margin-bottom: 10px;
+}
+
+.social button{ 
+    margin-top: 200px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    background-color: #0000ff;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: .5s;
+}
+.social button:hover{
+    box-shadow: 0px 0px 8px #0000ff;
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+
+
+
+/*-------------------------------ESTILO PROJETOS ----------------------------*/
+.portifolio .titulo{
+    margin-top: 50px;
+}
+.projetos > .grid-projetos{
+    display: inline-flex;
+    margin-left: 11%;
+    
+}
+
+.grid-projetos button {
+
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.grid-projetos img {
+    width: 250px; /* tamanho fixo das imagens */
+    border-radius: 100px;
+    transition: .5s
+}
+
+.grid-projetos img:hover {
+    border-radius: 10%;
+    transition: .5s;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.6); /* fundo escuro transparente */
+    position: relative;
+}
+.img-container .titulo {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6); /* fundo escuro transparente */
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    opacity: 0;                 /* começa invisível */
+    transition: 0.3s;
+}
+
+.pj1 button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.img-container img {
+    width: 250px;
+    border-radius: 100px;
+    display: block;
+    
+}
+
+.img-container .titulo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6); /* fundo escuro transparente */
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    opacity: 0;                 /* começa invisível */
+    transition: 0.3s;
+}
+
+.img-container:hover .titulo {
+    opacity: 1; /* aparece ao passar o mouse */
+}
+
+.projetos .pj1{
+    margin-left: 10%;   
+    
+}
+
+/*-------------------------------FIM ESTILO PROJETOS ----------------------------*/
+
+
+/*---------------------------------VISUALIZAR O PDF--------------------------*/
+
+/* 🔹 Modal ocupa tela toda */
+#pdf-modal {
+    display: none;   /* <-- começa escondido */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.85);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 🔹 Container do PDF */
+#pdf-viewer {
+    
+    width: 80%;
+    height: 90%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+#pdf-viewer iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* 🔹 Botão fechar */
+#fechar {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 1100;
+}
+/*---------------------------------FIM VISUALIZAR O PDF--------------------------*/
+
+
+/*---------------------------------Formulario-----------------------------------------*/
+section.formulario h2{
+    margin-top: 300px;
+    margin-bottom: 10px;
+    
+}
+form ::placeholder{
+    color: #fff;
+}
+
+
+form{
+    max-width: 700px;
+    margin-left: 580px;
+    margin-right: 6000px;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+form input{
+    border: #0000ff;
+    margin-left: 60px;
+    background-color: #0000002f;
+    outline: none;
+    padding: 15px 140px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    
+
+}
+form textarea{
+    margin-left: 60px;
+    background-color: #0000002f;
+    outline: none;
+    padding: 50px 140px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 19px;
+    text-align: center;
+    resize: none;
+    max-height: 50px;
+}
+
+form #btn-enviar{
+
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 30px;
+}
+#btn-enviar input{ 
+    width: px;
+    background-color: #0000ff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .5s;
+    margin-bottom: 50px;
+    text-align: center;
+   
+}
+
+#btn-enviar input:hover{
+    transition: .5s;
+    transform: scale(1.1);
+    box-shadow: #000080;
+    
+
+}
+
+/*---------------------------------FIM Formulario-----------------------------------------*/
+/*---------------------------------Rodape-----------------------------------------*/
+footer .social{
+    margin-top: 50px;
+}
+footer{
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #fff;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+    
+}
+.borda{
+    border-top: 7px solid #0000ff;
+    border-radius: 2%;
+}
+footer .line-footer p i{
+    color: #0000ff;
+    font-size: 30px;
+    margin-right: 15px;
+}
+footer .line-footer p a{
+    color: #fff;
+    font-size: 30px;
+}
+
+
+/*---------------------------------FIM Rodape-----------------------------------------*/
+    @media screen and (max-width: 1160px){  
+    
+    .flex{
+        flex-direction: column;
+   }
+   .flex .Topo-do-site{
+        flex-direction: column-reverse;
+   }
+   .toposite, .bnt-contato{
+        display: none;
+    }
+    #bnt-contato{
+        display: none;
+    }
+   
+    h2.titulo{
+        font-size: 29px;
+    }
+    .Especialidades .titulo{
+        margin-left: 30px;
+    }
+    .portifolio .titulo{
+        margin-left: 65px;
+    }
+    .formulario .titulo{
+        margin-left: 85px;
+    }
+    h2.titulo span{
+        color: #000080;
+        font-size: 30px;
+    }
+    .sobre .txt-sobre h1{
+        margin-right: -200px;
+        margin-left: -70px;
+    }   
+    .sobre .txt-sobre p{
+        margin-right: -100px;
+        margin-left: -100px;
+    }   
+    .sobre .txt-sobre p{
+    margin-bottom: 10px;
+    }  
+    .sobre .social{
+        margin-top: 60px;
+        display: inline-flex;
+    }
+    .pj1 button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        position: relative;
+
+    }
+    .projetos > .grid-projetos{
+        display: inline-block;
+        margin-left: 12%;
+        margin-right: 50%;  
+    }
+    .projetos .pj1{
+        margin-top: 20%;   
+        
+    }
+    #img-redonda1{
+        margin-left: 80px;
+        height: 70px;
+        padding: 10px 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 1s ease;
+    }
+
+    form{
+    max-width: 300px;
+    margin-left: 5px;
+    margin-right: 140px;
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 10px;
+}
+    form input{
+        margin-bottom: 5%;
+        margin-left: 50px;
+        text-align: center;
+        
+    }
+
+    form textarea{
+        margin-bottom: 5%;
+        margin-left: 50px;
+        padding: 40px 15px;
+        text-align: center;
+    }
+
+    form .btn-enviar{
+        margin-top: 20px;
+        margin-left: 90px;
+
+
+    }
+
+}
