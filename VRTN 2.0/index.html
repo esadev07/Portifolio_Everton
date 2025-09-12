@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+      <!-- Google Fontes -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     <!-- Google Fontes -->
+      <!--BOTSTRAP/CNJS ICONS-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <link rel="stylesheet" href="style.css">
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio - Desenvolvedor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+
+<body id="#">
+    <header class="">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">           
+            <img id="logo1" src="imagens/Logo/150px s.fundo preta.png">
+            <img id="logo2" src="imagens/Logo/150px s.fundo branca.png" style="display: none;"> 
+                  
+            <nav>
+                <div class="menu-btn" >
+                    <button onclick="menuShow()" >🟰</button>
+                </div>
+                <ul class="menu">
+                    <li><a href="#hero" class="">Início</a></li>
+                    <li><a href="#about" class="">Sobre</a></li>
+                    <li><a href="#projects" class="">Projetos</a></li>
+                    <li><a href="#conectar" class="hover:text-blue-500 transition">Contato</a></li>
+                        
+                </ul>
+            </nav>
+        
+            <button id="darkModeToggle" class="bg-gray-200 p-2 rounded-full hover:bg-gray-300 transition">🌙</button>
+        </div>
+    </header>
+    <div class="mobile-menu">
+            <ul onclick="apertado()">
+                    <li><a href="#hero" class="">Início</a></li>
+                    <li><a href="#hero" class="">Início</a></li>
+                    <li><a href="#about" class="">Sobre</a></li>
+                    <li><a href="#projects" class="">Projetos</a></li>
+                    <li><a href="#conectar" class="">Contato</a></li>
+            </ul>
+
+        </div>
+   
+
+    <section id="hero" class="ero-bg text-white min-h-screen flex items-center px-6">
+        <div class="container mx-auto text-center">
+            
+            <div class="perfil">
+            <img src="imagens/fotos de perfil/Foto principal(2).png" alt=""class="rounded-full mx-auto mb-6 border-4 border-white"/>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Olá, eu sou o Everton</h1>
+            <p class="text-xl md:text-2xl mb-8">Desenvolvedor Front-end e editor, apaixonado por criar soluções inovadoras</p>
+            <a href="#projects" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105">Veja Meus Projetos</a>
+        </div>
+    </section>
+
+<section id="about"></id></section> 
+    <section id="about" class="">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-8">Sobre Mim</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <img id="foto2" src="imagens/fotos de perfil/Foto secundaria.png" alt="" class="w-full md:w-1/2 mb-6 md:mb-0 rounded-lg shadow" />
+                <div class="md:ml-8">
+
+
+<div id="texto"></div>   <!-- parágrafo atual sendo digitado -->
+
+  <script> 
+const texto = ["Atuo nas áreas de Design e Tecnologia da Informação", 
+"Com formação em Gestão de TI e foco em solucionar desafios de forma criativa e estratégica. Minha missão é fortalecer a presença digital de empresas e pequenos negócios, ajudando-os a alcançar suas metas e expandir seus resultados.", 
+"Tenho 24 anos, sou apaixonado por tecnologia e entusiasta da inovação. Busco constantemente participar de projetos que unam criatividade e performance, contribuindo para transformar ideias em soluções reais.",
+ " Sou especializado em desenvolvimento web, mobile e edição de imagens, sempre com o objetivo de entregar experiências digitais modernas, funcionais e impactantes.", ];
+
+ const elemento = document.getElementById("texto"); 
+let pIndex = 0, lIndex = 0; function digitar() { 
+if (pIndex < texto.length) {
+if (!elemento.querySelectorAll("p")[pIndex]) {
+const novoP = document.createElement("p"); 
+elemento.appendChild(novoP); 
+}
+
+ const paragrafo = elemento.querySelectorAll("p")[pIndex]; 
+if (lIndex < texto[pIndex].length) { 
+paragrafo.innerHTML += texto[pIndex][lIndex]; lIndex++; 
+
+} else { pIndex++; lIndex = 0; setTimeout(digitar, 500); // pausa maior entre parágrafos return; 
+} let delay = Math.random() * (10 - 200) + 60; setTimeout(digitar, delay); 
+ }
+} 
+digitar(); 
+</script>
+   
+</script>
+
+</section>
+<div class="social">                      
+    <a href="https://www.instagram.com/everton_teh/"><button><i class="bi bi-instagram"></i></button></a>                      
+    <a href="https://www.linkedin.com/in/everton-souza-alves-1b823a346"><button><i class="bi bi-linkedin"></i></button></a>                  
+</div>
+
+
+<section id="skills" class="">
+    
+    <div class="">
+        <h2 class="text-3xl font-bold text-center mb-8">Skills</h2>
+        <div class="flex flex-col md:flex-row md:flex-wrap justify-center gap-8 text-center">
+            <div class="habilidades">
+            <div class="w-48">
+                <h3 class="font-semibold mb-2">HTML</h3>
+                <div class="w-full bg-gray-300 rounded-full h-4">
+                    <div class="progress-bar bg-orange-600 h-4 rounded-full" data-progress="75" style="width: 0%;"></div>
+                </div>
+                75%
+                <p class="mt-2 text-sm">Avançado</p>
+            </div>
+            <div class="w-48">
+                <h3 class="font-semibold mb-2">CSS</h3>
+                <div class="w-full bg-gray-300 rounded-full h-4">
+                    <div class="progress-bar bg-blue-600 h-4 rounded-full" data-progress="70" style="width: 0%;"></div>
+                </div>
+                70%
+                <p class="mt-2 text-sm">Avançado</p>
+            </div>
+            <div class="w-48">
+                <h3 class="font-semibold mb-2">JavaScript</h3>
+                <div class="w-full bg-gray-300 rounded-full h-4">
+                    <div class="progress-bar bg-yellow-500 h-4 rounded-full" data-progress="48" style="width: 0%;"></div>
+                </div>
+                48%
+                <p class="mt-2 text-sm">Intermediário</p>
+            </div>
+            <div class=" w-48">
+                <h3 class="font-semibold mb-2">Inglês</h3>
+                <div class="w-full bg-gray-300 rounded-full h-4">
+                    <div class="progress-bar bg-cyan-600 h-4 rounded-full" data-progress="30" style="width: 0%;"></div>
+                </div>
+                30%
+                <p class="mt-2 text-sm">Intermediário</p>
+            </div>
+            <div class="w-48">
+                <h3 class="font-semibold mb-2">Cap Cut</h3>
+                <div class="w-full bg-gray-300 rounded-full h-4">
+                    <div class="progress-bar bg-purple-600 h-4 rounded-full" data-progress="46" style="width: 0%;"></div>
+                </div>
+                46%
+                <p class="mt-2 text-sm">Intermediário</p>
+            </div>
+            <div class="w-48">
+                <h3 class="font-semibold mb-2">Canva</h3>
+                <div class="w-full bg-gray-300 rounded-full h-4">
+                    <div class="progress-bar bg-green-600 h-4 rounded-full" data-progress="86" style="width: 0%;"></div>
+                </div>
+                86%
+                <p class="mt-2 text-sm">Avançado</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="projects"></id></section>
+
+
+
+
+    <section id="" class="py-16 px-6 ">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Meus Projetos</h2>
+            <div id="projetosstilo" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+
+
+
+
+                <!--PROJETO 1--> 
+                <div class="project-card  p-6 rounded-lg shadow border">
+
+                    
+                    <img src="Projetos/Primeiro Portifolio/Portifolio Mak 1.png" alt="" class="w-full h-48 object-cover rounded mb-4" 
+                    button onclick="abrirPDF('Projetos/Primeiro Portifolio/Projeto em PDf.pdf')"></button>
+                    
+                    <h3 class="text-xl font-semibold mb-2">Portifolio </h3>
+                    <p class="mb-4">Criado do zero utilizando a ferramenta VS Code
+                        com a linguagem HTML, CSS e JS
+                    </p>
+                </div>
+                <!--FIM PROJETO 1-->
+
+                <!--PROJETO 2--> 
+                <div class="project-card  p-6 rounded-lg shadow border">
+
+                    
+                    <img src="Projetos/dados/2.png" alt="" class="w-full h-48 object-cover rounded mb-4" 
+                    button onclick="abrirPDF('Projetos/dados/Dados.pdf')"></button>
+                    
+                    <h3 class="text-xl font-semibold mb-2">Dados virtuais </h3>
+                    <p class="mb-4">Aplicativo para android criado no intuito de auxiliar nos jogos de tabuleiro
+                    </p>
+                </div>
+
+                <!--FIM PROJETO 2-->
+
+                <!--PROJETO 3--> 
+                <div class="project-card  p-6 rounded-lg shadow border">
+
+                    
+                    <img src="Projetos/Sarau/4.png" alt="" class="w-full h-48 object-cover rounded mb-4" 
+                    button onclick="abrirPDF('Projetos/Sarau/Divulgação Festa De Reggae Story Instagram.pdf')"></button>
+                    
+                    <h3 class="text-xl font-semibold mb-2">Sarau </h3>
+                    <p class="mb-4">Flyer Elaborado para as pessoas da comunidade próxima sobre evento
+                    </p>
+                </div>
+                <!--FIM PROJETO 3-->
+
+                <!--PROJETO 4--> 
+                <div class="project-card  p-6 rounded-lg shadow border">
+
+                    
+                    <img src="Projetos/pais/1.png" alt="" class="w-full h-48 object-cover rounded mb-4" 
+                    button onclick="abrirPDF('Projetos/pais/Dia dos pais.pdf')"></button>
+                    
+                    <h3 class="text-xl font-semibold mb-2">Dia dos Pais </h3>
+                    <p class="mb-4">Imagem para data do dia dos pais 
+                    </p>
+                </div>
+                <!--FIM PROJETO 4-->
+
+                <!--PROJETO 5--> 
+                <div class="project-card  p-6 rounded-lg shadow border">
+
+                    
+                    
+                    <img src="Projetos/jogo/3.png" alt="" class="w-full h-48 object-cover rounded mb-4" 
+                    button onclick="abrirPDF('Projetos/jogo/o melhor jogo do ano!.pdf')"></button>
+                    
+                    <h3 class="text-xl font-semibold mb-2">Game </h3>
+                    <p class="mb-4"> Demonstração de uma Thumbnail como início de gameplay para canal de games 
+                    </p>
+                </div>
+                <!--FIM PROJETO 5-->
+
+             <div id="contactForm" class="teste"></div>   
+            </div>
+        </div>
+    </section>
+<div id="pdf-modal">
+    <div id="pdf-viewer">
+      <button id="fechar" onclick="fecharPDF()">Fechar</button>
+      <iframe id="iframe-pdf" src=""></iframe>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+<!---------------------------------------------------Formulario------------------------------------------------->
+ <section class="formulario">
+  <div class="interface">
+    <h2 class="text-3xl font-bold text-center mb-12">Contato</h2>
+    <div class="flex">
+      <form id="conectar" method="post">
+        
+        <div class="campo">
+          <input type="text" id="nome" required>
+          <label for="nome">Seu nome</label>
+        </div>
+
+        <div class="campo">
+          <input type="email" id="e-mail" required>
+          <label for="email">Seu email</label>
+        </div>
+
+        <div class="campo">
+          <input type="text" id="subject">
+          <label for="subject">Assunto</label>
+        </div>
+
+        <div class="campo">
+          <textarea id="mensagem" rows="4" required></textarea>
+          <label for="mensagem">Sua mensagem</label>
+        </div>
+
+        <div id="btn-enviar"><input type="submit" value="Enviar"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!--<section class="formulario">
+    <div class="inteface">
+      <h2 class="text-3xl font-bold text-center mb-12">Contato</h2>
+      <div class="flex">
+
+          <form id="conectar" method="post">
+
+            <input type="text" placeholder="Seu nome" required id="nome">           
+            <input type="text" placeholder="Seu email"required id="e-mail">            
+            <input type="text" placeholder="Assunto" id="subject">
+            
+            <textarea placeholder="Sua mensagem" rows="4" id="mensagem"></textarea>
+            
+          <div id="btn-enviar"><input type="submit" value="Enviar"></div>
+          </form>
+
+
+
+      </div>
+    </div>
+</section>
+
+
+<---------------------------------------------------FIMFormulario------------------------------------------------->
+
+    
+
+    <footer class="py-8 bg-gray-800 text-white text-center">
+        <p>© 2025 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+       
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+</content>
+</create_file> 
+
+<attempt_completion>
